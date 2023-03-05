@@ -5,7 +5,7 @@ I decided to not upload the entire project since it was an experimental mess :)
 In short, it works by having all sprites being drawn in grayscale and then sampling each pixel in every texture using a fragment shader for different grayscale-values. Then we replace the grayscale-value for each pixel to a set color. This gives us full control of the color for the said value. In script we can change each grayscale color as a function of the distance to a light source and have its emitted light color decide which colors to affect in neighbouring
 sprites.
 
-Keep in mind this is just a demo and it needs a refactor badly, both in regards of performance and in code readability..
+Keep in mind this is just a demo and it needs a refactor badly, both in regards of performance and a code cleanup...
 
 Demo vid at: https://youtu.be/d4rsFTs34Ww
 
