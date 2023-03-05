@@ -25,14 +25,7 @@ func _ready():
 #	$GUILayer/GUI/Debug.set_daylight_color(Color(109, 142, 193))
 	pass # Replace with function body.
 
-func _process(_delta):
-#	if do_after_a_while > 1:
-#		do_after_a_while -= 1
-#	elif do_after_a_while == 1:
-#		do_after_a_while = -1
-#		print("DID IT!!")
-
-	
+func _process(_delta):	
 	if Input.is_action_just_pressed("toggle_debug_gui"):
 		$GUILayer/GUI/Debug.visible = !$GUILayer/GUI/Debug.visible
 	
@@ -66,32 +59,6 @@ func _process(_delta):
 #			else:
 ##				each.visible = true
 #				each.set_process(true)
-
-
-#	cullable_nodes = get_tree().get_nodes_in_group("is_light_component")
-##	print(cullable_nodes.size())
-#	for each in cullable_nodes:
-#		if each != null:
-#			if each.global_position.distance_to($Camera2D.global_position) > 700:
-#				each.set_process(false)
-#			else:
-#				each.set_process(true)
-
-	
-#	cullable_nodes = get_tree().get_nodes_in_group("has_palette_swapper")
-##	print(cullable_nodes.size())
-#	for each in cullable_nodes:
-#		if each != null:
-#			if each.global_position.distance_to($Camera2D.global_position) > 700:
-#				var material
-#				material = each.get_material()
-#				if material != null:
-#					each.get_material().set_shader_parameter("process", false)
-#			else:
-#				var material
-#				material = each.get_material()
-#				if material != null:
-#					each.get_material().set_shader_parameter("process", true)
 
 
 func _handle_change_level(signaling_node, next_level_name):
@@ -130,11 +97,6 @@ func _handle_change_level(signaling_node, next_level_name):
 	current_level.queue_free()
 	current_level = next_level
 	current_level.connect("change_level", _handle_change_level)
-
-
-
-
-
 
 
 
