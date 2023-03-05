@@ -76,7 +76,7 @@ func _handle_change_level(signaling_node, next_level_name):
 	add_child(next_level)
 	move_child(next_level, 0)
 	
-	#Move player
+	#Move player to new level
 	var player_handle
 	if self.has_node("Player"):
 		player_handle = player
