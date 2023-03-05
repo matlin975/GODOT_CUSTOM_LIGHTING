@@ -1,5 +1,6 @@
 # GODOT_CUSTOM_LIGHTING
 Custom 2D lighting in Godot using palette swapping shaders
+https://youtu.be/d4rsFTs34Ww
 
 <p align="center">
   <img src="https://github.com/matlin975/GODOT_CUSTOM_LIGHTING/blob/main/pics/demo1.png"/>
